@@ -1,0 +1,74 @@
+.section{
+  border: 3px solid #F4F4F4;
+  border-radius:10px;
+  background: url("http://www.oracle.com/us/assets/application/search/gif-files-1911248.gif?ssSourceSiteId=otnen") repeat-x !important;
+  margin: 5px 0 1.5em 0;
+  padding-left: 1em;
+}
+.section h2{
+  background: url("/technetwork/java/javame-old/redtriangle-303146.gif") no-repeat scroll 0 3px transparent !important;
+  padding-left: 12px !important;
+  padding-bottom: 1em !important;
+  text-transform: uppercase;
+  font-size: 12px !important;
+}
+
+.javabluesection {
+    background: linear-gradient(to bottom, rgba(75, 128, 165, 0.92) 0px, rgba(75, 128, 165, 0.92) 11%, rgba(72, 124, 160, 0.92) 22%, rgba(45, 90, 119, 0.92) 78%, rgba(38, 81, 108, 0.92) 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-radius: 8px 8px 8px 8px;
+    color: #FFFFFF;
+    padding: .75em .5em .1em 1em !important;
+}
+.javabluesection h2 a {
+    color: white !important;
+}
+.javabluesection a {
+    color: #FFFFFD;
+    text-decoration: underline;
+}
+
+.downloadBox{
+	width: 100%;
+}
+.downloadBox tr:hover td{ 
+  background-color: #E5E5E5;
+}
+.downloadBox tr:hover td a{ 
+  
+}
+.productName{
+	font-size: 1.5em;
+	margin-bottom: .2em;
+}
+.downloadBox tr th{
+	border: 0px;
+}
+.downloadBox tr.top th{
+	padding: .5em;
+	background: -moz-linear-gradient(top, rgba(178,178,178,0.65) 0%, rgba(124,124,124,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(178,178,178,0.65)), color-stop(100%,rgba(124,124,124,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(178,178,178,0.65) 0%,rgba(124,124,124,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(178,178,178,0.65) 0%,rgba(124,124,124,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(178,178,178,0.65) 0%,rgba(124,124,124,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(178,178,178,0.65) 0%,rgba(124,124,124,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6b2b2b2', endColorstr='#007c7c7c',GradientType=0 ); /* IE6-9 */
+}
+.downloadBox .license{
+	text-align: right;
+}
+.downloadDesc{
+	background-color: #e0e0e0;
+}
+.downloadBox .fileSize{
+	text-align: right;
+	white-space: nowrap
+}
+.downloadBox tr td{
+	border-bottom:1px solid #CCC;
+	margin-bottom:1px;
+}
+.downloadBox a.download{
+	background-image: url(/ocom/groups/public/@otn/documents/digitalasset/115899.gif);
+	background-repeat: no-repeat;
+	padding-left: 12px;
+}

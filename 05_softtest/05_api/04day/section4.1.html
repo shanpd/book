@@ -1,0 +1,985 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Jmeter 函数 | &lt;center&gt;接口测试&lt;/center&gt;</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../04day/section4.2.html" />
+    
+    
+    <link rel="prev" href="../04day/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.1"
+        data-chapter-title="Jmeter 函数"
+        data-filepath="04day/section4.1.md"
+        data-basepath=".."
+        data-revision="Sat Mar 03 2018 00:02:02 GMT+0800 (中国标准时间)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        接口测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="01day/index.html">
+            
+                
+                    <a href="../01day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第1章-接口测试基础知识
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="01day/section1.1.html">
+            
+                
+                    <a href="../01day/section1.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        接口及接口测试
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01day/section1.7.html">
+            
+                
+                    <a href="../01day/section1.7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        接口测试工具
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01day/section1.17.html">
+            
+                
+                    <a href="../01day/section1.17.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        接口架构规范
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="01day/section1.18.html">
+            
+                
+                    <a href="../01day/section1.18.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        案例-项目《学生管理》
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="02day/section2.90.html">
+            
+                
+                    <a href="../02day/section2.90.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        思考？
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="02day/index.html">
+            
+                
+                    <a href="../02day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第2章-接口测试工具的使用
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="02day/section2.1.html">
+            
+                
+                    <a href="../02day/section2.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        Jmeter是什么？有何用？
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="02day/section2.2.html">
+            
+                
+                    <a href="../02day/section2.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        环境搭建（Jmeter）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="02day/section2.3.html">
+            
+                
+                    <a href="../02day/section2.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Jmeter功能概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="02day/section2.4.html">
+            
+                
+                    <a href="../02day/section2.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Jmeter 各元件中重点梳理
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="03day/index.html">
+            
+                
+                    <a href="../03day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第3章-Jmeter工具核心知识点
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="03day/section3.1.html">
+            
+                
+                    <a href="../03day/section3.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Jmeter核心-参数化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="03day/section3.2.html">
+            
+                
+                    <a href="../03day/section3.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Jmeter核心-数据库
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="03day/section3.3.html">
+            
+                
+                    <a href="../03day/section3.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Jmeter核心-关联
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="03day/section3.4.html">
+            
+                
+                    <a href="../03day/section3.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        Jmeter核心-断言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="03day/section3.5.html">
+            
+                
+                    <a href="../03day/section3.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        Jmeter核心-集合点
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="04day/index.html">
+            
+                
+                    <a href="../04day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第4章-Jmeter插件、分布式
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="4.1" data-path="04day/section4.1.html">
+            
+                
+                    <a href="../04day/section4.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Jmeter 函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="04day/section4.2.html">
+            
+                
+                    <a href="../04day/section4.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Jmeter 分布式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="04day/section4.3.html">
+            
+                
+                    <a href="../04day/section4.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        Jmeter 逻辑控制器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="04day/section4.4.html">
+            
+                
+                    <a href="../04day/section4.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        Jmeter图形监视器扩展插件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="05day/index.html">
+            
+                
+                    <a href="../05day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第5章-项目API文档分析、功能脚本设计、接口用例设计
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="05day/section5.1.html">
+            
+                
+                    <a href="../05day/section5.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Jmeter 项目-接口清单整理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="05day/section5.2.html">
+            
+                
+                    <a href="../05day/section5.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        Jmeter 附件-API文档
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="05day/section5.3.html">
+            
+                
+                    <a href="../05day/section5.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Jmeter 项目功能脚本设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="05day/section5.4.html">
+            
+                
+                    <a href="../05day/section5.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Jmeter 项目接口用例设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="05day/section5.5.html">
+            
+                
+                    <a href="../05day/section5.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        Jmeter 项目用例参数化覆盖
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="06day/index.html">
+            
+                
+                    <a href="../06day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        第6章-接口自动化脚本设计、性能压测脚本设计、性能报告
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="06day/section6.1.html">
+            
+                
+                    <a href="../06day/section6.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Jmeter 接口自动化脚本设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="06day/section6.2.html">
+            
+                
+                    <a href="../06day/section6.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Jmeter 接口性能压测脚本设计
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="06day/section6.3.html">
+            
+                
+                    <a href="../06day/section6.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        Jmeter 生成HTML报告
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="06day/section6.4.html">
+            
+                
+                    <a href="../06day/section6.4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        接口测试基于Jmeter-项目总结
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="06day/section6.5.html">
+            
+                
+                    <a href="../06day/section6.5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        Jmeter 性能知识点-科普
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="07day/index.html">
+            
+                
+                    <a href="../07day/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        第7章-Jmeter其他功能知识点科普、Web脚本录制
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="07day/section7.1.html">
+            
+                
+                    <a href="../07day/section7.1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        Jmeter FTP
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="07day/section7.2.html">
+            
+                
+                    <a href="../07day/section7.2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        Jmeter Test Fragment
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="07day/section7.3.html">
+            
+                
+                    <a href="../07day/section7.3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        Jmeter 工作台、非测试元件、Web脚本录制
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >&lt;center&gt;接口测试&lt;/center&gt;</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="jmeter-&#x51FD;&#x6570;"><center>Jmeter &#x51FD;&#x6570;</center></h1>
+<hr>
+<h2 id="&#x76EE;&#x6807;">&#x76EE;&#x6807;</h2>
+<ul>
+<li>&#x638C;&#x63E1;&#x5E38;&#x7528;Jmeter&#x5E38;&#x7528;&#x51FD;&#x6570;;</li>
+</ul>
+<hr>
+<h2 id="1-jmeter&#x51FD;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;">1. Jmeter&#x51FD;&#x6570;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;</h2>
+<pre><code>&#x53EF;&#x4EE5;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x67D0;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x88AB;&#x91C7;&#x6837;&#x5668;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x6D4B;&#x8BD5;&#x5143;&#x4EF6;&#x6240;&#x5F15;&#x7528;&#x3002;
+</code></pre><h2 id="2-&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5B66;&#x4E60;&#x51FD;&#x6570;&#xFF1F;">2. &#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x5B66;&#x4E60;&#x51FD;&#x6570;&#xFF1F;</h2>
+<pre><code>1. &#x4F7F;&#x7528;&#x51FD;&#x6570;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;1&#x6B21;&#x3010;&#x6279;&#x91CF;&#x3011;&#x7684;&#x5BF9;&#x5B66;&#x9662;&#x8D44;&#x6E90;&#x8FDB;&#x884C;&#x65B0;&#x589E;
+2. &#x4F7F;&#x7528;&#x51FD;&#x6570;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x51FD;&#x6570;&#x8BFB;&#x53D6;&#x5916;&#x90E8;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x5316;
+3. &#x4F7F;&#x7528;&#x51FD;&#x6570;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x6307;&#x5B9A;&#x52A8;&#x6001;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x4E3A;&#x5168;&#x5C40;&#x53D8;&#x91CF;  
+</code></pre><h3 id="21-jmeter&#x5E38;&#x7528;&#x51FD;&#x6570;">2.1 Jmeter&#x5E38;&#x7528;&#x51FD;&#x6570;</h3>
+<pre><code>1. __CSVRead
+2. __counter 
+3. __Random
+4. __time
+5. __setProperty
+6. __property
+
+&#x4EE5;&#x4E0A;&#x4E3A;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Jmeter&#x6D4B;&#x8BD5;&#x9879;&#x76EE;&#x65F6;&#x5E38;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C06;&#x9010;&#x4E2A;&#x5B66;&#x4E60;&#xFF1B;
+</code></pre><h3 id="22-&#x5728;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5148;&#x4ECB;&#x7ECD;&#x4E0B;&#xFF1A;">2.2 &#x5728;&#x5B66;&#x4E60;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5148;&#x4ECB;&#x7ECD;&#x4E0B;&#xFF1A;</h3>
+<pre><code>1) Jmeter&#x51FD;&#x6570;&#x683C;&#x5F0F;
+2) &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;
+</code></pre><h3 id="23-jmeter&#x51FD;&#x6570;&#x7684;&#x683C;&#x5F0F;">2.3 Jmeter&#x51FD;&#x6570;&#x7684;&#x683C;&#x5F0F;</h3>
+<pre><code>1. ${__functionName(var1,var2,var3)} 
+
+     1) ${} &#x51FD;&#x6570;&#x5F15;&#x7528;&#x56FA;&#x5B9A;&#x683C;&#x5F0F;&#x548C;&#x53C2;&#x6570;&#x5316;&#x76F8;&#x540C;
+     2) __functionName&#x5339;&#x914D;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#x540D;&#x79F0;&#xFF1B;
+     3) &#x7528;&#x5706;&#x62EC;&#x53F7;&#x5305;&#x542B;&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;&#xFF0C;&#x4F8B;&#x5982;${__time(YMD)}&#xFF0C;&#x4E0D;&#x540C;&#x51FD;&#x6570;&#x8981;&#x6C42;&#x7684;&#x53C2;&#x6570;&#x4E5F;&#x4E0D;&#x540C;&#xFF1B;
+     4) &#x6709;&#x4E9B;JMeter&#x51FD;&#x6570;&#x4E0D;&#x8981;&#x6C42;&#x53C2;&#x6570;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x4E0D;&#x4F7F;&#x7528;&#x5706;&#x62EC;&#x53F7;&#xFF0C;&#x4F8B;&#x5982;${__threadNum};
+</code></pre><h3 id="24-&#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;">2.4 &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;</h3>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x5BF9;Jmeter&#x4E2D;&#x81EA;&#x5E26;&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x548C;&#x751F;&#x6210;&#x4F7F;&#x7528;
+
+&#x542F;&#x52A8;&#x65B9;&#x5F0F;&#xFF1A;
+    1) &#x83DC;&#x5355;&#xFF08;&#x9009;&#x9879;&#xFF09;--&gt;&#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;
+    2) Ctrl+Shift+F1
+    3) &#x5DE5;&#x5177;&#x680F;&#x5012;&#x6570;&#x7B2C;&#x4E8C;&#x4E2A; &#x56FE;&#x6807;&quot;&#x8BB0;&#x4E8B;&#x672C;&quot;  
+</code></pre><hr>
+<h2 id="3-csvread-&#x51FD;&#x6570;">3. __CSVRead &#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;csvRead&#x51FD;&#x6570;&#x662F;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x53D6;&#x53C2;&#x6570;&#xFF0C;csvRead&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4ECE;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x53D6;&#x591A;&#x4E2A;&#x53C2;&#x6570;
+</code></pre><h3 id="31-&#x6848;&#x4F8B;1">3.1 &#x6848;&#x4F8B;1</h3>
+<pre><code>&#x901A;&#x8FC7;CSVRead&#x51FD;&#x6570;&#x8BFB;&#x53D6;csv.txt&#x5185;&#x5BB9;&#xFF0C;&#x4F5C;&#x4E3A;&#x8BF7;&#x6C42;&#x65F6;&#x63A5;&#x53E3;&#x6240;&#x9700;&#x53C2;&#x6570;&#x7684;&#x503C;&#x4F7F;&#x7528;
+
+http://127.0.0.1:8000/api/departments/?$dep_id_list=${__CSVRead(E:\jmeterScript\&#x53C2;&#x6570;\csv.txt,0)}
+,${__CSVRead(E:\jmeterScript\&#x53C2;&#x6570;\csv.txt,1)}
+
+csv.txt&#x5185;&#x5BB9;
+    T01,T02
+    T03,T04
+    T05,T06  
+</code></pre><h3 id="32-&#x64CD;&#x4F5C;&#x5206;&#x6790;">3.2 &#x64CD;&#x4F5C;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;
+2. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;HTTP&#x8BF7;&#x6C42;
+3. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-&gt;__CSVRead
+4. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x76D1;&#x542C;&#x5668;-&gt;&#x5BDF;&#x770B;&#x7ED3;&#x679C;&#x6811;
+</code></pre><h3 id="33-&#x6280;&#x672F;&#x96BE;&#x70B9;">3.3 &#x6280;&#x672F;&#x96BE;&#x70B9;</h3>
+<pre><code>1. __CSVRead &#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+2. &#x7EBF;&#x7A0B;&#x7EC4; (&#x7EBF;&#x7A0B;&#x6570;)
+</code></pre><h3 id="34-csvread-&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;">3.4 __CSVRead &#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/fun1001.png" alt="__CSVRead">  </p>
+<pre><code>1. &#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#xFF1A;&#x9009;&#x62E9;__CSVRead
+2. CSV file to get values from | *alias&#xFF1A;&#x8981;&#x8BFB;&#x53D6;&#x7684;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;-(&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;)
+3. CSV&#x6587;&#x4EF6;&#x5217;&#x53F7;| next| *alias&#xFF1A;&#x4ECE;&#x7B2C;&#x51E0;&#x5217;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;&#xFF0C;&#x6CE8;&#x610F;&#x7B2C;&#x4E00;&#x5217;&#x662F;0
+4. &#x70B9;&#x51FB;&#x751F;&#x6210;&#x51FD;&#x6570;&#x5F15;&#x7528;&#x683C;&#x5F0F;
+5. &#x5168;&#x9009;&#x590D;&#x5236;
+</code></pre><h3 id="35-csvread&#x603B;&#x7ED3;&#xFF1A;">3.5 __CSVRead-&#x603B;&#x7ED3;&#xFF1A;</h3>
+<pre><code>1. &#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;
+2. &#x5217;&#x7684;&#x5F00;&#x59CB;&#x7D22;&#x5F15;
+3. &#x591A;&#x884C;&#x53C2;&#x6570;&#x4F7F;&#x7528;&#x7EBF;&#x7A0B;&#x6570;  
+</code></pre><hr>
+<h2 id="4-counter&#x51FD;&#x6570;">4. __counter&#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;&#x6B21;&#x6570;  
+</code></pre><h3 id="41-&#x6848;&#x4F8B;2">4.1 &#x6848;&#x4F8B;2</h3>
+<pre><code>&#x4F7F;&#x7528;counter&#x8BA1;&#x6B21;&#x51FD;&#x6570;&#xFF0C;&#x8BF7;&#x6C42;(&#x67E5;&#x8BE2;&#x5B66;&#x9662;-&#x6240;&#x6709;)10&#x6B21;,&#x4E3A;&#x6BCF;&#x6B21;&#x8BF7;&#x6C42;&#x505A;&#x8BA1;&#x6B21;&#x6807;&#x8BC6;  
+
+http://127.0.0.1:8000/api/departments/?num=${__counter(FALSE,)}
+</code></pre><h3 id="42-&#x64CD;&#x4F5C;&#x5206;&#x6790;">4.2 &#x64CD;&#x4F5C;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;
+2. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;HTTP&#x8BF7;&#x6C42;
+3. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-&gt;__counter
+4. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x76D1;&#x542C;&#x5668;-&gt;&#x5BDF;&#x770B;&#x7ED3;&#x679C;&#x6811;
+</code></pre><h3 id="43-&#x6280;&#x672F;&#x96BE;&#x70B9;">4.3 &#x6280;&#x672F;&#x96BE;&#x70B9;</h3>
+<pre><code>1. __counter&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+2. &#x8BBE;&#x7F6E;&#x8BA1;&#x6570;&#x53C2;&#x6570;&#x540D;
+</code></pre><h3 id="44-counter&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;">4.4 __counter&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/funcounter01.png" alt="__counter">   </p>
+<pre><code>1. TRUE&#xFF0C;&#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF1B;FALSE&#xFF0C;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x8BA1;&#x6570;&#x5668;:
+    1) TRUE:  &#x6BCF;&#x4E2A;&#x7528;&#x6237;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x7EDF;&#x8BA1;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x5404;&#x6267;&#x884C;&#x4E86;&#x591A;&#x5C11;&#x6B21;
+    2) FALSE: &#x4F7F;&#x7528;&#x5168;&#x5C40;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x7EDF;&#x8BA1;&#x51FA;&#x8FD9;&#x6B21;&#x6D4B;&#x8BD5;&#x5171;&#x8FD0;&#x884C;&#x4E86;&#x591A;&#x5C11;&#x6B21;&#x7528;
+</code></pre><h3 id="45-counter&#x51FD;&#x6570;&#x603B;&#x7ED3;">4.5 __counter&#x51FD;&#x6570;-&#x603B;&#x7ED3;</h3>
+<pre><code>1. __counter&#x51FD;&#x6570;&#x4F5C;&#x7528;
+2. __counter&#x51FD;&#x6570;&#x4E0E;&#x6307;&#x5B9A;&#x503C;&#x914D;&#x5408;&#x4F7F;&#x7528; num=${__counter(FALSE,)}
+</code></pre><hr>
+<h2 id="5-random&#x51FD;&#x6570;">5. __Random&#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x968F;&#x673A;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6570;&#x503C;   
+</code></pre><h3 id="51-&#x6848;&#x4F8B;3">5.1 &#x6848;&#x4F8B;3</h3>
+<pre><code>&#x4F7F;&#x7528;__Random&#x51FD;&#x6570;&#x5BF9;&#x8BF7;&#x6C42;(&#x67E5;&#x8BE2;&#x5B66;&#x9662;-&#x6307;&#x5B9A;)&#x8FDB;&#x884C;&#x968F;&#x673A;&#x67E5;&#x8BE2;
+
+http://127.0.0.1:8000/api/departments/T0${__Random(1,6,)}/
+</code></pre><h3 id="52-&#x64CD;&#x4F5C;&#x5206;&#x6790;">5.2 &#x64CD;&#x4F5C;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;
+2. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;HTTP&#x8BF7;&#x6C42;
+3. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-&gt;__Random
+4. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x76D1;&#x542C;&#x5668;-&gt;&#x5BDF;&#x770B;&#x7ED3;&#x679C;&#x6811;  
+</code></pre><h3 id="53-&#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;">5.3 &#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;</h3>
+<pre><code>1. __Random&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+</code></pre><h3 id="54-random&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;">5.4 __Random&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/funrandom01.png" alt="__Random&#x51FD;&#x6570;"> </p>
+<pre><code>1. &#x4E00;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x7684;&#x6700;&#x5C0F;&#x503C;:&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#x65F6;&#x5F00;&#x59CB;&#x6570;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x5C0F;&#x6570;
+2. &#x4E00;&#x4E2A;&#x8303;&#x56F4;&#x5185;&#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927;&#x503C;:&#x968F;&#x673A;&#x751F;&#x6210;&#x7ED3;&#x675F;&#x6570;&#xFF0C;&#x4E5F;&#x662F;&#x6700;&#x5927;&#x6570;
+</code></pre><h3 id="55-random&#x603B;&#x7ED3;">5.5 __Random-&#x603B;&#x7ED3;</h3>
+<pre><code>1. __Random&#x4F5C;&#x7528;
+2. __Random&#x8BBE;&#x7F6E;
+</code></pre><hr>
+<h2 id="6-time&#x51FD;&#x6570;">6. __time&#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x7535;&#x8111;&#x65E5;&#x671F;&#x65F6;&#x95F4; &#x6BD4;&#x5982;&#xFF1A;MMddhhmmss &#x6708;/&#x65E5;/&#x65F6;&#x5206;&#x79D2;
+</code></pre><h3 id="61-&#x6848;&#x4F8B;4">6.1 &#x6848;&#x4F8B;4</h3>
+<pre><code>&#x4F7F;&#x7528;__time&#x51FD;&#x6570;&#x89E3;&#x51B3;&#x8FED;&#x4EE3;(&#x5B66;&#x9662;-&#x65B0;&#x589E;)dep_id&#x91CD;&#x590D;&#x95EE;&#x9898;
+
+JSON&#x62A5;&#x6587;&#xFF1A;
+        {
+            &quot;data&quot;: [
+                        {
+                            &quot;dep_id&quot;:&quot;time${__time(MMddhhmmss,)}&quot;,
+                            &quot;dep_name&quot;:&quot;Test&#x5B66;&#x9662;&quot;,
+                            &quot;master_name&quot;:&quot;Test-Master&quot;,
+                            &quot;slogan&quot;:&quot;Here is Slogan&quot;
+                        }
+                      ]
+        }
+</code></pre><h3 id="62-&#x64CD;&#x4F5C;&#x5206;&#x6790;">6.2 &#x64CD;&#x4F5C;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;HTTP&#x4FE1;&#x606F;&#x5934;&#x7BA1;&#x7406;&#x5668;
+2. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;
+3. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;HTTP&#x8BF7;&#x6C42;
+4. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-&gt;__time&#x51FD;&#x6570;
+5. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x76D1;&#x542C;&#x5668;-&gt;&#x5BDF;&#x770B;&#x7ED3;&#x679C;&#x6811;   
+</code></pre><h3 id="63-&#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;">6.3 &#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;</h3>
+<pre><code>1. HTTP&#x4FE1;&#x606F;&#x5934;&#x7BA1;&#x7406;&#x5668;&#x8BBE;&#x7F6E;
+2. HTTP&#x65B0;&#x589E;&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;
+3. __time&#x51FD;&#x6570;&#x53C2;&#x6570;
+</code></pre><h3 id="64-time&#x51FD;&#x6570;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;">6.4 __time&#x51FD;&#x6570;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/funtime01.png" alt="time&#x51FD;&#x6570;">  </p>
+<pre><code>1. Format string for SimpleDateFormat (optional)&#xFF1A;
+    1) &#x4E3A;&#x7A7A;&#xFF1A;&#x8FD4;&#x56DE;&#x6BEB;&#x79D2;
+    2) &#x8BBE;&#x7F6E;&#x683C;&#x5F0F;&#xFF1A;MMddhhmmss &#x6708;/&#x65E5;/&#x65F6;/&#x5206;/&#x79D2;   
+</code></pre><h3 id="65-time&#x51FD;&#x6570;&#x603B;&#x7ED3;">6.5 __time&#x51FD;&#x6570;-&#x603B;&#x7ED3;</h3>
+<pre><code>1. __time&#x4F5C;&#x7528;
+2. __time&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+</code></pre><hr>
+<h2 id="7-setproperty&#x51FD;&#x6570;">7. __setProperty&#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x7528;&#x4E8E;&#x628A;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x8BBE;&#x5B9A;&#x6210;Jmeter&#x5C5E;&#x6027;&#xFF0C;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x662F;&#x628A;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x8BBE;&#x7F6E;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;  
+</code></pre><h3 id="71-&#x6848;&#x4F8B;5">7.1 &#x6848;&#x4F8B;5</h3>
+<pre><code>1. &#x901A;&#x8FC7;__setProperty&#x51FD;&#x6570;&#x628A;&#x65B0;&#x589E;&#x7684;&#x5B66;&#x9662;ID&#xFF0C;&#x8BBE;&#x7F6E;&#x6210;&#x5168;&#x5C40;&#x53D8;&#x91CF;
+</code></pre><h3 id="72-&#x64CD;&#x4F5C;&#x5206;&#x6790;">7.2 &#x64CD;&#x4F5C;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-HTTP&#x4FE1;&#x606F;&#x5934;&#x7BA1;&#x7406;&#x5668;
+2. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;JDBC Connection Configuration
+3. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;(&#x5B66;&#x9662;-&#x65B0;&#x589E;)
+4. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;HTTP&#x8BF7;&#x6C42;(HTTP&#x8BF7;&#x6C42;-&#x5B66;&#x9662;&#x65B0;&#x589E;)
+5. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;JDBC Request
+6. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-&gt;__setProperty&#x51FD;&#x6570;
+7. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;BeanShell Sampler
+8. &#x7EBF;&#x7A0B;&#x7EC4;-&gt;Debug Sampler
+9. &#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x5BDF;&#x770B;&#x7ED3;&#x679C;&#x6811;
+10. &#x5DE5;&#x4F5C;&#x53F0;-&gt;Property Display
+</code></pre><h3 id="73-&#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;">7.3 &#x6280;&#x672F;&#x96BE;&#x70B9;&#x5206;&#x6790;</h3>
+<pre><code>1. __setProperty&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+2. BeanShell Sampler&#x4F5C;&#x7528; 
+3. JDBC Request SQL&#x8BED;&#x53E5;
+4. &#x5982;&#x4F55;&#x77E5;&#x9053;&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;(&#x5168;&#x5C40;&#x53D8;&#x91CF;)&#x6210;&#x529F;&#x4E86;
+</code></pre><h3 id="74-setproperty&#x51FD;&#x6570;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;">7.4 __setProperty&#x51FD;&#x6570;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/funsetpro01.png" alt="__setProperty">  </p>
+<pre><code>1. &#x5C5E;&#x6027;&#x540D;&#x79F0;:&#x8981;&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#x540D;&#x79F0;&#x4E5F;&#x5C31;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x540D;
+2. Value of property:&#x5C5E;&#x6027;&#x7684;&#x503C;(&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x7684;&#x503C;)  
+</code></pre><h3 id="75-beanshell-sampler-&#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x56FE;">7.5 BeanShell Sampler &#x7EC4;&#x4EF6;&#x914D;&#x7F6E;&#x56FE;</h3>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x53EF;&#x6267;&#x884C;JavaScript&#x7684;&#x4E00;&#x79CD;&#x5BB9;&#x5668;
+</code></pre><p><img src="../04img/Beanshell01.png" alt="BeanShell Sampler&#x56FE;">    </p>
+<h3 id="76-property-display">7.6 Property Display</h3>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x663E;&#x793A;Jmeter&#x5DE5;&#x5177;&#x4E2D;&#x7684;&#x5C5E;&#x6027;  
+</code></pre><h3 id="77-setproperty&#x51FD;&#x6570;&#x603B;&#x7ED3;">7.7 __setProperty&#x51FD;&#x6570;-&#x603B;&#x7ED3;</h3>
+<pre><code>1. __setProperty&#x4F5C;&#x7528;
+2. &#x5982;&#x4F55;&#x67E5;&#x770B;Jmeter&#x5DF2;&#x6709;&#x7684;&#x5C5E;&#x6027;
+</code></pre><h3 id="78-&#x9700;&#x6C42;">7.8 &#x9700;&#x6C42;</h3>
+<pre><code>&#x5982;&#x4F55;&#x83B7;&#x53D6;__setProperty&#x8BBE;&#x7F6E;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x4F5C;&#x4E3A;&#x6307;&#x5B9A;&#x67E5;&#x8BE2;&#x7684;dep_id&#xFF1F;
+</code></pre><hr>
+<h2 id="8-property&#x51FD;&#x6570;">8. __property&#x51FD;&#x6570;</h2>
+<pre><code>&#x4F5C;&#x7528;&#xFF1A;&#x83B7;&#x53D6;Jmeter&#x4E2D;&#x5C5E;&#x6027;&#x503C;
+</code></pre><h3 id="81-&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5206;&#x6790;">8.1 &#x89E3;&#x51B3;&#x65B9;&#x6848;&#x5206;&#x6790;</h3>
+<pre><code>1. &#x9009;&#x4E2D;&#x6848;&#x4F8B;5&#x4E2D;&#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x7EC4;&#x9009;&#x9879;
+2. &#x57FA;&#x4E8E;&#x6848;&#x4F8B;5&#x4E2D;&#x6D4B;&#x8BD5;&#x8BA1;&#x5212;-&gt;&#x7EBF;&#x7A0B;&#x7EC4;(&#x7EBF;&#x7A0B;&#x7EC4;-&#x8BFB;&#x53D6;depid&#x5C5E;&#x6027;)
+3. &#x7EBF;&#x7A0B;&#x7EC4;(&#x7EBF;&#x7A0B;&#x7EC4;-&#x8BFB;&#x53D6;depid&#x5C5E;&#x6027;)-&gt;HTTP&#x8BF7;&#x6C42;(HTTP&#x8BF7;&#x6C42;-&#x8BFB;&#x53D6;depid&#x5C5E;&#x6027;)
+4. &#x51FD;&#x6570;&#x52A9;&#x624B;&#x5BF9;&#x8BDD;&#x6846;-__property&#x51FD;&#x6570;  
+</code></pre><h3 id="82-&#x5B9E;&#x65BD;&#x96BE;&#x70B9;&#x5206;&#x6790;">8.2 &#x5B9E;&#x65BD;&#x96BE;&#x70B9;&#x5206;&#x6790;</h3>
+<pre><code>1. __property&#x51FD;&#x6570;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;
+</code></pre><h3 id="83-property&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;">8.3 __property&#x51FD;&#x6570;&#x914D;&#x7F6E;&#x56FE;</h3>
+<p><img src="../04img/funproperty01.png" alt="__property&#x51FD;&#x6570;">   </p>
+<pre><code>1. Name of variable in which to store the result (optional):&#x83B7;&#x53D6;&#x5C5E;&#x6027;&#x7684;&#x540D;&#x79F0;
+</code></pre><h3 id="84-property&#x51FD;&#x6570;&#x603B;&#x7ED3;">8.4 __property&#x51FD;&#x6570;-&#x603B;&#x7ED3;</h3>
+<pre><code>1. __property&#x4F5C;&#x7528;
+</code></pre><hr>
+<h2 id="9-&#x5E38;&#x7528;&#x51FD;&#x6570;&#x603B;&#x7ED3;">9. &#x5E38;&#x7528;&#x51FD;&#x6570;-&#x603B;&#x7ED3;</h2>
+<pre><code>1. __CSVRead
+2. __counter 
+3. __Random
+4. __time
+5. __setProperty
+6. __property
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../04day/index.html" class="navigation navigation-prev " aria-label="Previous page: 第4章-Jmeter插件、分布式"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../04day/section4.2.html" class="navigation navigation-next " aria-label="Next page: Jmeter 分布式"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

@@ -1,0 +1,93 @@
+资源描述
+	{
+    "collection": {
+        "version": "1.0",
+        "href": " http://service-root/FactoryModelService/factories",
+        "links": [],
+		"items": [
+            {
+                "href": "/1001",
+                "data": [
+                    {
+                        "name": "factoryId",
+                        "value": "1001"
+                    },
+                    {
+                        "name": "code",
+                        "value": "facNO1"
+                    },
+                    {
+                        "name": "name",
+                        "value": "深圳电子厂一厂"
+                    },
+					{
+                        "name": "enabled",
+                        "value": "1"
+                    },
+                    {
+                        "name": "creator",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "createTime",
+                        "value": "2016-12-06 13: 00: 00"
+                    },
+                    {
+                         "name": "des",
+                         "value": "电子厂说明"
+                     }
+          ],
+        "links": [
+          {
+            "rel": "loadingDocks",
+            "href":"http://service-root/FactoryModelService/factories/1001/loadingDocks",
+            "prompt": "装卸台集合"
+          }
+                ]
+            }
+       ],
+"templates" : {
+      "data" : [
+        {
+            "name":"code",
+            "value":""
+        },{
+            "name": "name",
+            "value": ""
+        },{
+            "name": "enabled",
+            "value": ""
+        },{
+            "name": "creator",
+            "value": ""
+        },{
+            "name": "createTime",
+            "value": ""
+        },{
+            "name": "des",
+            "value": ""
+        }
+      ]
+},
+   "queries": [
+{
+            "rel": "condition",
+            "href": "http: //service-root/FactoryModelService/factories",
+            "prompt": "条件查询（名称、简称支持模糊查询）",
+            "data": [
+              {
+                  "name": "name",
+                  "value": ""
+              },{
+                  "name": "enabled",
+                  "value": ""
+              }
+            ]
+           }
+          ],
+         "error": {
+           "code": "",
+           "Message": ""
+          }
+        }
+    }

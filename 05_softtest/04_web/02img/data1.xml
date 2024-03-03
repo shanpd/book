@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<node>
+    <db>
+        <b1>3</b1>
+        <b2>3</b2>
+        <b3>3</b3>
+        <expect>等边三角形</expect>
+    </db>
+    <dy>
+        <b1>4</b1>
+        <b2>4</b2>
+        <b3>5</b3>
+        <expect>等腰三角形</expect>
+    </dy>
+    <pt>
+        <b1>3</b1>
+        <b2>4</b2>
+        <b3>5</b3>
+        <expect>普通三角形</expect>
+    </pt>
+
+</node>
